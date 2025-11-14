@@ -1,0 +1,8 @@
+if(TARGET catch2::_catch2 AND NOT TARGET Catch2::Catch2)
+    add_library(Catch2::Catch2 INTERFACE IMPORTED)
+    set_property(TARGET Catch2::Catch2 PROPERTY INTERFACE_LINK_LIBRARIES catch2::_catch2)
+endif()
+if(TARGET catch2::catch2_with_main AND NOT TARGET Catch2::Catch2WithMain)
+    add_library(Catch2::Catch2WithMain INTERFACE IMPORTED)
+    set_property(TARGET Catch2::Catch2WithMain PROPERTY INTERFACE_LINK_LIBRARIES catch2::catch2_with_main)
+endif()

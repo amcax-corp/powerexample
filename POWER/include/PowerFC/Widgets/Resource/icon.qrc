@@ -1,0 +1,92 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/base/list-add.png</file>
+        <file>icon/base/min.png</file>
+        <file>icon/base/max.png</file>
+        <file>icon/base/set.png</file>
+        <file>icon/base/settings.png</file>
+        <file>icon/base/help.png</file>
+        <file>icon/base/update.png</file>
+        <file>icon/base/tree-open.png</file>
+        <file>icon/base/tree-close.png</file>
+        <file>icon/base/required-status.png</file>
+        <file>icon/base/select-part.png</file>
+        <file>icon/base/select-all.png</file>
+        <file>icon/base/satisfied-status.png</file>
+        <file>theme/block-theme.qss</file>
+    </qresource>
+    <!-- arrow -->
+    <qresource prefix="/">
+        <file>icon/arrow/down-arrow.png</file>
+        <file>icon/arrow/list-up-arrow.png</file>
+        <file>icon/arrow/list-down-arrow.png</file>
+        <file>icon/arrow/angle-down-small.png</file>
+        <file>icon/arrow/angle-up-small.png</file>
+        <file>icon/arrow/arrow-down.png</file>
+        <file>icon/arrow/arrow-right.png</file>
+        <file>icon/arrow/left-arrow.png</file>
+        <file>icon/arrow/right-arrow.png</file>
+        <file>icon/arrow/scroll-down-arrow.png</file>
+        <file>icon/arrow/scroll-up-arrow.png</file>
+        <file>icon/arrow/scroll-left-arrow.png</file>
+        <file>icon/arrow/scroll-right-arrow.png</file>
+    </qresource>
+    <!-- close -->
+    <qresource prefix="/">
+        <file>icon/close/list-delete.png</file>
+        <file>icon/close/close.png</file>
+        <file>icon/close/widgets-close.png</file>
+        <file>icon/close/closefind.png</file>
+    </qresource>
+    <!-- file -->
+    <qresource prefix="/">
+        <file>icon/file/file.png</file>
+        <file>icon/file/save-as.png</file>
+        <file>icon/file/print.png</file>
+    </qresource>
+    <!-- cad -->
+    <qresource prefix="/">
+        <file>icon/cad/blank-boundary.png</file>
+        <file>icon/cad/check-boundary.png</file>
+        <file>icon/cad/create-isolines.png</file>
+        <file>icon/cad/edit-display.png</file>
+        <file>icon/cad/extend-curve.png</file>
+        <file>icon/cad/extend-surface.png</file>
+        <file>icon/cad/floor-plane.png</file>
+        <file>icon/cad/hole-feature-geometry.png</file>
+        <file>icon/cad/intersect-surface.png</file>
+        <file>icon/cad/loft.png</file>
+        <file>icon/cad/measure.png</file>
+        <file>icon/cad/merge-curve.png</file>
+        <file>icon/cad/part-boundary.png</file>
+        <file>icon/cad/plane.png</file>
+        <file>icon/cad/project-curve.png</file>
+        <file>icon/cad/rebuild-multi-surface.png</file>
+        <file>icon/cad/rebuild-surface.png</file>
+        <file>icon/cad/reorder.png</file>
+        <file>icon/cad/reverse-curve.png</file>
+        <file>icon/cad/reverse-direction.png</file>
+        <file>icon/cad/revolve-surface.png</file>
+        <file>icon/cad/select-edge.png</file>
+        <file>icon/cad/select-face.png</file>
+        <file>icon/cad/select-vertex.png</file>
+        <file>icon/cad/set-public-color.png</file>
+        <file>icon/cad/split-curve.png</file>
+        <file>icon/cad/surface-deviation-analysis.png</file>
+        <file>icon/cad/transform.png</file>
+        <file>icon/cad/trim-boundary.png</file>
+        <file>icon/cad/trim-surface.png</file>
+        <file>icon/cad/unwrap-edges-into-plane.png</file>
+        <file>icon/cad/wcs.png</file>
+        <file>icon/cad/csys.png</file>
+        <file>icon/cad/point.png</file>
+        <file>icon/cad/vector.png</file>
+        <file>icon/cad/toolpath-check.png</file>
+        <file>icon/cad/toolpath-invalid.png</file>
+        <file>icon/cad/color.png</file>
+        <file>icon/cad/edited.png</file>
+        <file>icon/cad/feed.png</file>
+        <file>icon/cad/select-object.png</file>
+        <file>icon/cad/select-volume.png</file>
+    </qresource>
+</RCC>

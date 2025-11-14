@@ -1,0 +1,406 @@
+<RCC>
+    <!-- theme and app icon -->
+    <qresource prefix="/">
+        <file>icon/logo.ico</file>
+        <file>theme/ribbonbar-theme1.qss</file>
+        <file>theme/application-theme1.qss</file>
+        <file>theme/tree-theme.qss</file>
+    </qresource>
+    <!-- base -->
+    <qresource prefix="/">
+        <file>icon/CAMWorkbench.png</file>
+        <file>icon/base/icon_invisiable.png</file>
+        <file>icon/base/icon_visiable.png</file>
+        <file>icon/base/close.png</file>
+        <file>icon/base/close-dark.png</file>
+        <file>icon/base/close-white.png</file>
+        <file>icon/base/maximize.png</file>
+        <file>icon/base/minimize.png</file>
+        <file>icon/base/restore.png</file>
+        <file>icon/base/tree-close.png</file>
+        <file>icon/base/tree-open.png</file>
+        <file>icon/base/dialog-close.png</file>
+        <file>icon/base/arrow-down.png</file>
+        <file>icon/base/arrow-right.png</file>
+        <file>icon/base/loading.gif</file>
+        <file>icon/base/default-project.png</file>
+        <file>icon/base/angle-down-small.png</file>
+        <file>icon/base/angle-up-small.png</file>
+        <file>icon/base/angle-right-small.png</file>
+        <file>icon/base/logo-large.png</file>
+        <file>icon/base/zoom-out.png</file>
+        <file>icon/base/zoom-in.png</file>
+        <file>icon/base/zoom-to-fit.png</file>
+        <file>icon/base/Waterline_interference_icon.png</file>
+
+    </qresource>
+    <!-- file -->
+    <qresource prefix="/">
+        <file>icon/file/new.png</file>
+        <file>icon/file/create-by-part.png</file>
+        <file>icon/file/import-part.png</file>
+        <file>icon/file/open.png</file>
+        <file>icon/file/save-as.png</file>
+        <file>icon/file/save.png</file>
+        <file>icon/file/preference.png</file>
+        <file>icon/file/about.png</file>
+    </qresource>
+    <!-- toolbar -->
+    <qresource prefix="/">
+        <!-- 播放控制 -->
+        <file>icon/toolbar/display-tool-path-with-animation.png</file>
+        <file>icon/toolbar/play.png</file>
+        <file>icon/toolbar/play-backwards.png</file>
+        <file>icon/toolbar/pause.png</file>
+        <!-- 创建 -->
+        <file>icon/toolbar/create-geometry.png</file>
+        <file>icon/toolbar/create-method.png</file>
+        <file>icon/toolbar/create-tool.png</file>
+        <file>icon/toolbar/custom-tool.png</file>
+        <file>icon/toolbar/import-tool-from-library.png</file>
+        <file>icon/toolbar/create-operation.png</file>
+        <file>icon/toolbar/create-program.png</file>
+        <file>icon/toolbar/tool-library.png</file>
+        <file>icon/toolbar/new-tool-library.png</file>
+        <file>icon/toolbar/edit-tool-library.png</file>
+        <file>icon/toolbar/export-tool-to-library.png</file>
+        <file>icon/toolbar/setting.png</file>
+        <!-- 快捷创建 -->
+        <file>icon/toolbar/blade-finish.png</file>
+        <file>icon/toolbar/blish-rough.png</file>
+        <file>icon/toolbar/hub-finish.png</file>
+        <!-- 工序操作 -->
+        <file>icon/toolbar/generate-tool-path.png</file>
+        <file>icon/toolbar/operation-list.png</file>
+        <file>icon/toolbar/operation-confirm.png</file>
+        <file>icon/toolbar/machine-simulation.png</file>
+        <file>icon/toolbar/post-treatment.png</file>
+        <!-- 显示控制 -->
+        <file>icon/toolbar/show-tool-path.png</file>
+        <file>icon/toolbar/select-tool-path.png</file>
+        <file>icon/toolbar/show-tool-style.png</file>
+        <file>icon/toolbar/non-cutting-path.png</file>
+        <file>icon/toolbar/tool-path-analysis.png</file>
+        <!-- 刀具显示 -->
+        <file>icon/toolbar/display-tool.png</file>
+        <file>icon/toolbar/display-tool-axis.png</file>
+        <file>icon/toolbar/display-tool-and-holder.png</file>
+        <!-- 点显示 -->
+        <file>icon/toolbar/display-all-tool-axis.png</file>
+        <file>icon/toolbar/set-tool-axis-color.png</file>
+        <file>icon/toolbar/display-tool-center.png</file>
+        <file>icon/toolbar/tool-recommendation.png</file>
+        <file>icon/toolbar/slider-icon.png</file>
+        <!-- 机床配置 -->
+        <file>icon/toolbar/machine-config.png</file>
+        <!-- CAD -->
+        <file>icon/toolbar/extend-curve.png</file>
+        <file>icon/toolbar/extend-surface.png</file>
+        <file>icon/toolbar/intersect-surface.png</file>
+        <file>icon/toolbar/loft.png</file>
+        <file>icon/toolbar/merge-curve.png</file>
+        <file>icon/toolbar/project-curve.png</file>
+        <file>icon/toolbar/rebuild-multi-surface.png</file>
+        <file>icon/toolbar/rebuild-surface.png</file>
+        <file>icon/toolbar/reverse-curve.png</file>
+        <file>icon/toolbar/revolve-surface.png</file>
+        <file>icon/toolbar/split-curve.png</file>
+        <file>icon/toolbar/surface-deviation-analysis.png</file>
+        <file>icon/toolbar/transform.png</file>
+        <file>icon/toolbar/trim.png</file>
+        <file>icon/toolbar/undo.png</file>
+        <file>icon/toolbar/redo.png</file>
+        <file>icon/toolbar/measure.svg</file>
+        <file>icon/left-bar/object-view.png</file>
+        <file>icon/toolbar/select-vertex.png</file>
+        <file>icon/toolbar/select-edge.png</file>
+        <file>icon/toolbar/select-face.png</file>
+        <file>icon/toolbar/create-isolines.png</file>
+        <file>icon/toolbar/unwrap-edges-into-plane.png</file>
+        <file>icon/toolbar/trim-surface.png</file>
+        <file>icon/toolbar/split-surface.png</file>
+        <!-- 仿真 -->
+        <file>icon/toolbar/finish-simulation.png</file>
+        <file>icon/toolbar/reset.png</file>
+        <file>icon/toolbar/save.png</file>
+        <file>icon/toolbar/diagram.png</file>
+        <file>icon/toolbar/display-setting.png</file>
+        <file>icon/toolbar/simulation-setting.png</file>
+        <file>icon/toolbar/single-step-play.png</file>
+        <file>icon/toolbar/workpiece-geometry.png</file>
+        <file>icon/toolbar/workblank.png</file>
+        <!-- 分析 -->
+        <file>icon/toolbar/distance.png</file>
+        <file>icon/toolbar/length.png</file>
+        <file>icon/toolbar/radius.png</file>
+        <file>icon/toolbar/bounding-cube.png</file>
+        <file>icon/toolbar/bounding-sphere.png</file>
+        <file>icon/toolbar/bounding-cylinder.png</file>
+        <file>icon/toolbar/ncfile-analysis.png</file>
+        <file>icon/toolbar/curve-continuity.png</file>
+        <file>icon/toolbar/curve-curvature-comb.png</file>
+        <file>icon/toolbar/surface-curvature-comb.png</file>
+        <file>icon/toolbar/zebra.png</file>
+
+    </qresource>
+    <!-- left bar -->
+    <qresource prefix="/">
+        <file>icon/left-bar/geometry-view.png</file>
+        <file>icon/left-bar/tool-view.png</file>
+        <file>icon/left-bar/program-view.png</file>
+        <file>icon/left-bar/operation.png</file>
+        <file>icon/left-bar/part.png</file>
+        <file>icon/left-bar/project-list.png</file>
+        <file>icon/left-bar/rebuild-wizard.png</file>
+        <file>icon/left-bar/method-view.png</file>
+    </qresource>
+    <!-- view -->
+    <qresource prefix="/">
+        <file>icon/view/fit-area.png</file>
+        <file>icon/view/fit-screen.png</file>
+        <file>icon/view/perspective.png</file>
+        <file>icon/view/view-switch.png</file>
+        <file>icon/view/view-x-.png</file>
+        <file>icon/view/view-x+.png</file>
+        <file>icon/view/view-y-.png</file>
+        <file>icon/view/view-y+.png</file>
+        <file>icon/view/view-z-.png</file>
+        <file>icon/view/view-z+.png</file>
+        <file>icon/view/wcs.png</file>
+    </qresource>
+    <!-- navigator -->
+    <qresource prefix="/">
+        <file>icon/navigator/geometry_default.png</file>
+        <file>icon/navigator/toolpath_check.png</file>
+        <file>icon/navigator/tool_changed.png</file>
+        <file>icon/navigator/toolpath_copy.png</file>
+        <file>icon/navigator/icon_folder.png</file>
+        <file>icon/navigator/csys.png</file>
+        <file>icon/navigator/tool.png</file>
+        <file>icon/navigator/toolpath_invalid.png</file>
+        <file>icon/navigator/workpiece_geometry.png</file>
+        <file>icon/navigator/multi_blade_geometry.png</file>
+        <file>icon/navigator/copy.png</file>
+        <file>icon/navigator/delete.png</file>
+        <file>icon/navigator/edit.png</file>
+        <file>icon/navigator/generate-tool-path.png</file>
+        <file>icon/navigator/insert.png</file>
+        <file>icon/navigator/list.png</file>
+        <file>icon/navigator/operation.png</file>
+        <file>icon/navigator/post-treatment.png</file>
+        <file>icon/navigator/rename.png</file>
+        <file>icon/navigator/simulation.png</file>
+        <file>icon/navigator/tool-path.png</file>
+        <file>icon/navigator/transform.png</file>
+        <file>icon/navigator/comfirm.png</file>
+        <file>icon/navigator/paste.png</file>
+        <file>icon/navigator/internal-paste.png</file>
+        <file>icon/navigator/export.png</file>
+        <file>icon/navigator/object.png</file>
+        <file>icon/navigator/rebuild.png</file>
+
+        <file>icon/navigator/blade.png</file>
+        <file>icon/navigator/boundary.png</file>
+        <file>icon/navigator/edge.png</file>
+        <file>icon/navigator/fillet.png</file>
+        <file>icon/navigator/hub-fillet.png</file>
+        <file>icon/navigator/hub.png</file>
+        <file>icon/navigator/leading-edge.png</file>
+        <file>icon/navigator/trailing-edge.png</file>
+        <file>icon/navigator/section.png</file>
+        <file>icon/navigator/shroud-fillet.png</file>
+        <file>icon/navigator/shroud.png</file>
+        <file>icon/navigator/side.png</file>
+        <file>icon/navigator/splitter-edge.png</file>
+        <file>icon/navigator/splitter-fillet.png</file>
+        <file>icon/navigator/splitter-hub-fillet.png</file>
+        <file>icon/navigator/splitter-leading-edge.png</file>
+        <file>icon/navigator/splitter-section.png</file>
+        <file>icon/navigator/splitter-shroud-fillet.png</file>
+        <file>icon/navigator/splitter-side.png</file>
+        <file>icon/navigator/splitter-trailing-edge.png</file>
+        <file>icon/navigator/splitter.png</file>
+        <file>icon/navigator/rebuild-multi-blade-geometry.png</file>
+        <file>icon/navigator/default_avatar.png</file>
+        <file>icon/navigator/progress.png</file>
+        <file>icon/navigator/success.png</file>
+        <file>icon/navigator/not-started.png</file>
+        <file>icon/navigator/error.png</file>
+        <file>icon/navigator/approved.png</file>
+        <file>icon/navigator/edited.png</file>
+        <file>icon/navigator/empty-tool-path.png</file>
+        <file>icon/navigator/imported.png</file>
+        <file>icon/navigator/locked.png</file>
+        <file>icon/navigator/none.png</file>
+        <file>icon/navigator/regenerate.png</file>
+        <file>icon/navigator/repost.png</file>
+        <file>icon/navigator/suppressed.png</file>
+        <file>icon/navigator/suspect.png</file>
+        <file>icon/navigator/transformed.png</file>
+        <file>icon/navigator/complete.png</file>
+
+        <file>icon/navigator/boring-reaming.png</file>
+        <file>icon/navigator/drilling.png</file>
+        <file>icon/navigator/floor-wall-milling.png</file>
+        <file>icon/navigator/planar-milling.png</file>
+        <file>icon/navigator/spot-drilling.png</file>
+        <file>icon/navigator/spot-facing.png</file>
+        <file>icon/navigator/tapping.png</file>
+        <file>icon/navigator/display-machining-area.png</file>
+        <file>icon/navigator/hole-feature-geometry.png</file>
+        <file>icon/navigator/drilling-tool.png</file>
+        <file>icon/navigator/milling-tool.png</file>
+        <file>icon/navigator/method-drilling.png</file>
+        <file>icon/navigator/method-mill.png</file>
+    </qresource>
+    <!-- popup -->
+    <qresource prefix="/">
+        <file>icon/popup/cal.png</file>
+        <file>icon/popup/csys.png</file>
+        <file>icon/popup/part.png</file>
+        <file>icon/popup/setting.png</file>
+        <file>icon/popup/workblank.png</file>
+        <file>icon/popup/show.png</file>
+        <file>icon/popup/check.png</file>
+        <file>icon/popup/color.png</file>
+        <file>icon/popup/hub.png</file>
+        <file>icon/popup/cladding.png</file>
+        <file>icon/popup/blade.png</file>
+        <file>icon/popup/fillet.png</file>
+        <file>icon/popup/split-blade.png</file>
+        <file>icon/popup/delete.png</file>
+        <file>icon/popup/point.png</file>
+        <file>icon/popup/vector.png</file>
+        <file>icon/popup/checked.png</file>
+        <file>icon/popup/angle-down-small.png</file>
+        <file>icon/popup/angle-up-small.png</file>
+        <file>icon/popup/cancel.png</file>
+        <file>icon/popup/reset.png</file>
+        <file>icon/popup/tool-path-event.png</file>
+        <file>icon/popup/add.png</file>
+        <file>icon/popup/remove.png</file>
+        <file>icon/popup/file-path.png</file>
+        <file>icon/popup/messagebox_confirm.png</file>
+        <file>icon/popup/messagebox_error.png</file>
+        <file>icon/popup/messagebox_info.png</file>
+        <file>icon/popup/messagebox_warning.png</file>
+        <file>icon/popup/export-to-library.png</file>
+        <file>icon/popup/scatter.png</file>
+        <file>icon/popup/double-dot-dash-line.png</file>
+        <file>icon/popup/dash-dot-line.png</file>
+        <file>icon/popup/dot-line.png</file>
+        <file>icon/popup/dash-line.png</file>
+        <file>icon/popup/solid-line.png</file>
+
+    </qresource>
+    <!-- legend -->
+    <qresource prefix="/">
+        <file>icon/legend/ball-tool.png</file>
+        <file>icon/legend/flat_tool.png</file>
+        <file>icon/legend/bull_tool.png</file>
+        <file>icon/legend/holder.png</file>
+        <file>icon/legend/blisk-rough-operation.png</file>
+        <file>icon/legend/blisk-hub-operation.png</file>
+        <file>icon/legend/blisk_trochoidal_operation.png</file>
+        <file>icon/legend/blisk-blade-finish-operation.png</file>
+        <file>icon/legend/blisk_mix_milling_operation.png</file>
+        <file>icon/legend/blisk_combined_milling_operation.png</file>
+        <file>icon/legend/blisk_blade_edge_finish_operation.png</file>
+        <file>icon/legend/Blisk_Fillet_Finish_Milling_Operation.png</file>
+        <file>icon/legend/blisk_blade_edge_plunge.png</file>
+        <file>icon/legend/impeller.png</file>
+        <file>icon/legend/blisk.png</file>
+        <file>icon/legend/ac-worktable.png</file>
+    </qresource>
+    <!-- tip -->
+    <qresource prefix="/">
+        <file>icon/tip/l_center_slot_from_lead.png</file>
+        <file>icon/tip/l_center_slot_from_trail.png</file>
+        <file>icon/tip/l_wall_to_wall_from_trail.png</file>
+        <file>icon/tip/l_wall_to_wall_from_lead.png</file>
+        <file>icon/tip/l_leading_to_trailing_passes.png</file>
+        <file>icon/tip/l_trailing_to_leading_passes.png</file>
+        <file>icon/tip/l_lead_to_trail_wall_to_wall.png</file>
+        <file>icon/tip/l_trail_to_lead_wall_to_wall.png</file>
+        <file>icon/tip/l_lead_to_trail_from_center.png</file>
+        <file>icon/tip/l_trail_to_lead_from_center.png</file>
+        <file>icon/tip/t_center_slot_from_lead.png</file>
+        <file>icon/tip/t_center_slot_from_trail.png</file>
+        <file>icon/tip/t_wall_to_wall_from_trail.png</file>
+        <file>icon/tip/t_wall_to_wall_from_lead.png</file>
+        <file>icon/tip/t_leading_to_trailing_passes.png</file>
+        <file>icon/tip/t_trailing_to_leading_passes.png</file>
+        <file>icon/tip/t_lead_to_trail_wall_to_wall.png</file>
+        <file>icon/tip/t_trail_to_lead_wall_to_wall.png</file>
+        <file>icon/tip/t_lead_to_trail_from_center.png</file>
+        <file>icon/tip/t_trail_to_lead_from_center.png</file>
+        <file>icon/tip/u_from_lead.png</file>
+        <file>icon/tip/u_from_trailing.png</file>
+        <file>icon/tip/trochoidal_from_lead.png</file>
+        <file>icon/tip/trochoidal_from_trailing.png</file>
+        <file>icon/tip/cross_flow_point_milling.png</file>
+        <file>icon/tip/constant_depth_flank_milling.png</file>
+        <file>icon/tip/constant_depth_point_milling.png</file>
+        <file>icon/tip/cross_flow_shroud_to_hub.png</file>
+        <file>icon/tip/cross_flow_hub_to_shroud.png</file>
+        <file>icon/tip/cross_flow_zig_zag.png</file>
+        <file>icon/tip/single_direction.png</file>
+        <file>icon/tip/helical.png</file>
+        <file>icon/tip/zig_zag.png</file>
+        <file>icon/tip/operation_table_rough.png</file>
+        <file>icon/tip/operation_table_finish.png</file>
+
+    </qresource>
+       <!-- cuttertool -->
+    <qresource prefix="/">
+        <file>icon/cuttertool/holder.png</file>
+        <file>icon/cuttertool/ball.png</file>
+        <file>icon/cuttertool/flat.png</file> 
+        <file>icon/cuttertool/bull.png</file>   
+        <file>icon/cuttertool/chamfer.png</file>   
+        <file>icon/cuttertool/std.png</file>   
+        <file>icon/cuttertool/tap.png</file>   
+        <file>icon/cuttertool/counter.png</file>   
+        <file>icon/cuttertool/thread.png</file> 
+        <file>icon/cuttertool/boringbar.png</file> 
+        <file>icon/cuttertool/tcutter.png</file>       
+    </qresource> 
+
+    <!-- feature -->
+    <qresource prefix="/">
+        <file>feature/area.svg</file>
+        <file>feature/close.png</file>
+        <file>feature/create_feature_process.png</file>
+        <file>feature/feature-group.svg</file>
+        <file>feature/find_feature.png</file>  
+        <file>feature/machine-config.png</file>
+        <file>feature/pmi.svg</file>
+        <file>feature/project-list.svg</file>   
+        <file>feature/search.png</file>           
+    </qresource>
+
+    <!-- method -->
+    <qresource prefix="/">
+        <file>icon/method/color.png</file>
+        <file>icon/method/feed.png</file>
+        <file>icon/method/edit-display.png</file>
+        <file>icon/method/set-public-color.png</file>       
+    </qresource>
+
+    <!-- operation -->
+    <qresource prefix="/">
+        <file>icon/operation/blank-boundary.png</file>
+        <file>icon/operation/check-boundary.png</file>
+        <file>icon/operation/edit-display.png</file>
+        <file>icon/operation/floor-plane.png</file>
+        <file>icon/operation/hole-feature-geometry.png</file>
+        <file>icon/operation/part-boundary.png</file>
+        <file>icon/operation/plane.png</file>
+        <file>icon/operation/reorder.png</file>
+        <file>icon/operation/reverse-direction.png</file>
+        <file>icon/operation/select-curve.png</file>
+        <file>icon/operation/select-face.png</file>
+        <file>icon/operation/set-public-color.png</file>
+        <file>icon/operation/trim-boundary.png</file>
+    </qresource>
+</RCC>

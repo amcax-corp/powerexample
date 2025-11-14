@@ -1,0 +1,18 @@
+<!-- %{FormContents} -->
+<ui version="4.0">
+<widget class="BlockCategory" name="%{CN}">
+  <property name="geometry">
+    <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>450</width>
+      <height>50</height>
+    </rect>
+  </property>
+</widget>
+<customwidgets>
+  <customwidget>
+   <header>Widgets/ContainerBlock/BlockCategory.h</header>
+  </customwidget>
+</customwidgets>
+</ui>

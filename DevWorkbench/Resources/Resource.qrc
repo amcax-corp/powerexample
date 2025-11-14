@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="lang_en.qm">lang/lang_en.qm</file>
+        <file alias="lang_zh_CN.qm">lang/lang_zh_CN.qm</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>tip/GUIDialogDefultValue.json</file>
+    </qresource>
+
+    <qresource prefix="/">
+        <file  alias="RibbonBar_en.json">tip/en_us/RibbonBar_en.json</file>
+        <file  alias="ToolEditDialog_en.json">tip/en_us/ToolEditDialog_en.json</file>
+        <file  alias="OperationDialogRough_en.json">tip/en_us/OperationDialogRough_en.json</file>
+        <file  alias="OperationDialogFinish_en.json">tip/en_us/OperationDialogFinish_en.json</file>
+    </qresource>
+
+    <qresource prefix="/">
+        <file alias="RibbonBar_zh.json">tip/zh_cn/RibbonBar_zh.json</file>
+        <file alias="ToolEditDialog_zh.json">tip/zh_cn/ToolEditDialog_zh.json</file>
+        <file alias="OperationDialogRough_zh.json">tip/zh_cn/OperationDialogRough_zh.json</file>
+        <file alias="OperationDialogFinish_zh.json">tip/zh_cn/OperationDialogFinish_zh.json</file>
+    </qresource>
+
+    <qresource prefix="/">
+        <file>images/background.png</file>
+    </qresource>
+</RCC>

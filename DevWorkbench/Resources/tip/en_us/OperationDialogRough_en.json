@@ -1,0 +1,32 @@
+[
+    {
+        "key":"control_table",
+        "type":"h_layout",
+        "title":"进给率速度控制",
+        "text":"",
+        "img":":icon/toolbar/create-tool.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":300
+    },
+    {
+        "key":"drag_angle",
+        "type":"h_layout",
+        "title":"前倾角设置",
+        "text":"",
+        "img":":icon/toolbar/create-tool.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":300
+    },
+    {
+        "key":"tilt_angle",
+        "type":"h_layout",
+        "title":"侧倾角设置",
+        "text":"",
+        "img":":icon/toolbar/create-tool.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":300
+    }
+]

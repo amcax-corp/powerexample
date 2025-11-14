@@ -1,0 +1,25 @@
+<ui language="c++">
+  <class>%{CN}</class>
+  <widget class="BlockDialog" name="%{CN}">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>350</width>
+        <height>280</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>无标题</string>
+    </property>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>BlockDialog</class>
+      <extends>QDialog</extends>
+      <header>Widgets/ContainerBlock/BlockDialog.h</header>
+      <container>1</container>
+      <addpagemethod>InitContainerWidget</addpagemethod>
+    </customwidget>
+  </customwidgets>
+</ui>

@@ -1,0 +1,328 @@
+{
+    "BliskRough": {        
+        "cutterWidget": {
+            "Decimals":4,
+            "two":[[[10, "MAX_RANGE"], [10, "MAX_RANGE"]],[100, 100],[1000, 1000]],
+            "three":[[[10, "MAX_RANGE"], [10, "MAX_RANGE"], [0, "MAX_RANGE"]],[100, 100, 100],[1000, 1000, 1000]],
+            "four":[[[10, "MAX_RANGE"], [10, "MAX_RANGE"], [0, "MAX_RANGE"], [0, "MAX_RANGE"]],[100, 100, 100, 100],[1000, 1000, 1000 ,1000]]
+        },
+        "strategyWidget": {
+            "Decimals":4,
+            "extension_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "extension_steps": [1, 10],
+            "extension_defultlist": [0, 0],
+            "distance_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "distance_steps": [1, 10],
+            "distance_defultlist": [0, 0],
+            "tangential_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "tangential_steps": [1, 10],
+            "tangential_defultlist": [0, 0],
+            "radial_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "radial_steps": [1, 10],
+            "radial_defultlist": [0, 0]
+        },
+        "passesWidget":{
+            "Decimals":4,
+            "distance_ranges": [[1, "MAX_RANGE"], [0.05, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "distance_steps": [1, 0.1, 10],
+            "distance_defultlist": [1, 1, 30],
+            "max_distance_ranges": [[0.05, "MAX_RANGE"], [0, "MAX_RANGE"], [3, "MAX_RANGE"]],
+            "max_distance_steps": [0.1, 10, 1],
+            "max_distance_defultlist": [1, 40, 3],
+            "max_step_ranges": [[0.1, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "max_step_steps": [0.1, 10],
+            "max_step_defultlist": [1, 30]
+        },
+        "axisAndAvoidanceWidget":{
+            "Decimals":4,
+            "tool_holder_ranges": [[0, 0],[0, 10], [0, 100]],
+            "tool_holder_steps": [0, 1, 10],
+            "tool_holder_defultlist": [0, 0, 0],
+            "tool_neck_ranges": [[0, 10], [0, 100]],
+            "tool_neck_steps": [1, 10],
+            "tool_neck_defultlist": [0, 0]
+        },
+        "nonCuttingMoveWidget":{
+            "Decimals":4,
+            "smoothing_length_ranges": [["0+epsilon", "MAX_RANGE"], ["0+epsilon", "MAX_RANGE"]],
+            "smoothing_length_steps": [1, 10],
+            "smoothing_length_defultlist": [5, 50],
+            "smoothing_height_ranges": [["0+epsilon", "MAX_RANGE"], ["0+epsilon", "MAX_RANGE"]],
+            "smoothing_height_steps": [1, 10],
+            "smoothing_height_defultlist": [2, 15],
+            "first_last_ranges": [["0+epsilon", "MAX_RANGE"], ["0+epsilon", "MAX_RANGE"]],
+            "first_last_steps": [1, 10],
+            "first_last_defultlist": [5, 50]
+        }
+    },
+    "BliskHub": {
+        "cutterWidget": {
+            "Decimals":4,
+            "two_ranges": [[10, 5000], [10, 5000]],
+            "two_steps": [100, 100],
+            "two_defultlist": [1000, 1000],
+            "three_ranges": [[10, 5000], [10, 5000], [0, 10000]],
+            "three_steps": [100, 100, 100],
+            "three_defultlist": [1000, 1000, 1000],
+            "four_ranges": [[10, 5000], [10, 5000], [0, 10000], [0, 10000]],
+            "four_steps": [100, 100, 100, 100],
+            "four_defultlist": [1000, 1000, 1000, 1000]
+        },
+        "strategyWidget": {
+            "Decimals":4,
+            "slot_depth_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "slot_depth_steps": [1, 10],
+            "slot_depth_defultlist": [1.5, 30],
+            "extension_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "extension_steps": [1, 10],
+            "extension_defultlist": [0, 0],
+            "distance_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "distance_steps": [1, 10],
+            "distance_defultlist": [0, 0],
+            "tangential_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "tangential_steps": [1, 10],
+            "tangential_defultlist": [0, 0],
+            "radial_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "radial_steps": [1, 10],
+            "radial_defultlist": [0, 0]
+        },
+        "passesWidget":{
+            "Decimals":4,
+            "max_distance_ranges": [["0.0+epsilon", "MAX_RANGE"], ["0.0+epsilon", "MAX_RANGE"], [3, "MAX_RANGE"]],
+            "max_distance_steps": [0.1, 10, 1],
+            "max_distance_defultlist": [0.5, 10, 3],
+            "max_step_ranges": [[0.1, 1], [1, 50]],
+            "max_step_steps": [0.1, 10],
+            "max_step_defultlist": [0.2, 10]
+        },
+        "axisAndAvoidanceWidget":{
+            "Decimals":4,
+            "tool_holder_ranges": [[0, 0],[0, 100], [0, 1000]],
+            "tool_holder_steps": [0, 1, 10],
+            "tool_holder_defultlist": [0, 0, 0],
+            "tool_neck_ranges": [[0, 100], [0, 1000]],
+            "tool_neck_steps": [1, 10],
+            "tool_neck_defultlist": [0, 0]
+        },
+        "nonCuttingMoveWidget":{
+            "Decimals":4,
+            "smoothing_length_ranges": [[0, 100], [0, 1000]],
+            "smoothing_length_steps": [1, 10],
+            "smoothing_length_defultlist": [5, 50],
+            "smoothing_height_ranges": [[0, 100], [0, 1000]],
+            "smoothing_height_steps": [1, 10],
+            "smoothing_height_defultlist": [1, 15],
+            "first_last_ranges": [[0, 100], [0, 1000]],
+            "first_last_steps": [1, 10],
+            "first_last_defultlist": [5, 50]
+        }
+    },
+    "BliskBladeMixed": {
+        "cutterWidget": {
+            "Decimals":4,
+            "two_ranges": [[10, 5000], [10, 5000]],
+            "two_steps": [100, 100],
+            "two_defultlist": [1000, 1000],
+            "three_ranges": [[10, 5000], [10, 5000], [0, 10000]],
+            "three_steps": [100, 100, 100],
+            "three_defultlist": [1000, 1000, 1000],
+            "four_ranges": [[10, 5000], [10, 5000], [0, 10000], [0, 10000]],
+            "four_steps": [100, 100, 100, 100],
+            "four_defultlist": [1000, 1000, 1000, 1000]
+        },
+        "strategyWidget": {
+            "Decimals":4,
+            "lead_trail_ranges": [[0, 100], [0, 1000]],
+            "lead_trail_steps": [1, 10],
+            "lead_trail_defultlist": [0, 0]
+        },
+        "passesWidget":{            
+            "Decimals":4,
+            "distance_ranges": [["0+epsilon", "MAX_RANGE"], ["0+epsilon", 100]],
+            "distance_steps": [0.1, 10],
+            "distance_defultlist": [0.5, 10],
+            "semi_ranges":[[0.05, 0.5]],
+            "semi_steps":[0.1],
+            "semi_defultlist":[0.2],
+            "finishing_ranges":[["0+epsilon", "MAX_RANGE"]],
+            "finishing_steps":[0.1],
+            "finishing_defultlist":[0.2],
+            "max_step_ranges": [[0.1, 1], [1, 100]],
+            "max_step_steps": [0.1, 10],
+            "max_step_defultlist": [0.2, 10]
+        },
+        "axisAndAvoidanceWidget":{
+            "Decimals":4,
+            "tool_holder_ranges": [[0, 0],[0, 100], [0, 1000]],
+            "tool_holder_steps": [0, 1, 10],
+            "tool_holder_defultlist": [0, 0, 0],
+            "tool_neck_ranges": [[0, 100], [0, 1000]],
+            "tool_neck_steps": [1, 10],
+            "tool_neck_defultlist": [0, 0]
+        },
+        "nonCuttingMoveWidget":{
+            "Decimals":4,
+            "first_last_ranges": [[0, 100], [100, 1000]],
+            "first_last_steps": [1, 10],
+            "first_last_defultlist": [10, 50],
+            "arc_radius_ranges": [[0, 100], [0, 1000]],
+            "arc_radius_steps": [1, 10],
+            "arc_radius_defultlist": [5, 25]
+        }
+    },
+    "BliskBladeFinish": {
+        "cutterWidget": {
+            "Decimals":4,
+            "two_ranges": [[10, 5000], [10, 5000]],
+            "two_steps": [100, 100],
+            "two_defultlist": [1000, 1000],
+            "three_ranges": [[10, 5000], [10, 5000], [0, 10000]],
+            "three_steps": [100, 100, 100],
+            "three_defultlist": [1000, 1000, 1000],
+            "four_ranges": [[10, 5000], [10, 5000], [0, 10000], [0, 10000]],
+            "four_steps": [100, 100, 100, 100],
+            "four_defultlist": [1000, 1000, 1000, 1000]
+        },
+        "strategyWidget": {},
+        "passesWidget":{
+            "Decimals":4,            
+            "distance_ranges": [["0+epsilon", "MAX_RANGE"], ["0+epsilon", 100]],
+            "distance_steps": [0.1, 10],
+            "distance_defultlist": [0.5, 10],
+            "max_step_ranges": [[0.01, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "max_step_steps": [0.1, 10],
+            "max_step_defultlist": [0.2, 10]
+        },
+        "axisAndAvoidanceWidget":{
+            "Decimals":4,
+            "tool_holder_ranges": [[0, 0],[0, 100], [0, 1000]],
+            "tool_holder_steps": [0, 1, 10],
+            "tool_holder_defultlist": [0, 0, 0],
+            "tool_neck_ranges": [[0, 100], [0, 1000]],
+            "tool_neck_steps": [1, 10],
+            "tool_neck_defultlist": [0, 0]
+        },
+        "nonCuttingMoveWidget":{
+            "Decimals":4,
+            "first_last_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "first_last_steps": [1, 10],
+            "first_last_defultlist": [5, 50],
+            "arc_radius_ranges": [[0, 100], [0, 1000]],
+            "arc_radius_steps": [1, 10],
+            "arc_radius_defultlist": [5, 25]
+        }
+    },
+    "BliskBladeEdgeFinish": {
+        "cutterWidget": {
+            "Decimals":4,
+            "two_ranges": [[10, 5000], [10, 5000]],
+            "two_steps": [100, 100],
+            "two_defultlist": [1000, 1000],
+            "three_ranges": [[10, 5000], [10, 5000], [0, 10000]],
+            "three_steps": [100, 100, 100],
+            "three_defultlist": [1000, 1000, 1000],
+            "four_ranges": [[10, 5000], [10, 5000], [0, 10000], [0, 10000]],
+            "four_steps": [100, 100, 100, 100],
+            "four_defultlist": [1000, 1000, 1000, 1000]
+        },
+        "strategyWidget": {},
+        "passesWidget":{
+            "Decimals":4,            
+            "distance_ranges": [[0.05, "MAX_RANGE"], [1, "MAX_RANGE"]],
+            "distance_steps": [0.1, 10],
+            "distance_defultlist": [0.5, 10],
+            "max_distance_ranges": [[0.05, "MAX_RANGE"], [1, "MAX_RANGE"]],
+            "max_distance_steps": [0.1, 10],
+            "max_distance_defultlist": [0.5, 10],
+            "max_step_ranges": [[0.1, "MAX_RANGE"], [1, "MAX_RANGE"]],
+            "max_step_steps": [0.1, 10],
+            "max_step_defultlist": [0.5, 10]
+        },
+        "axisAndAvoidanceWidget":{
+            "Decimals":4,
+            "tool_holder_ranges": [[0, 0],[0, 100], [0, 1000]],
+            "tool_holder_steps": [0, 1, 10],
+            "tool_holder_defultlist": [0, 0, 0],
+            "tool_neck_ranges": [[0, 100], [0, 1000]],
+            "tool_neck_steps": [1, 10],
+            "tool_neck_defultlist": [0, 0]
+        },
+        "nonCuttingMoveWidget":{
+            "Decimals":4,
+            "first_last_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "first_last_steps": [1, 10],
+            "first_last_defultlist": [5, 50]
+        }
+    },
+    "BliskCombinedMilling": {
+        "Decimals":4,
+        "semi_ranges":[[0.05, 0.5]],
+        "semi_steps":[0.1],
+        "semi_defultlist":[0.2],
+        "finishing_ranges":[[0.05, 0.5]],
+        "finishing_steps":[0.1],
+        "finishing_defultlist":[0.2],
+        "rough_ranges":[[0.05, 0.5]],
+        "rough_steps":[0.1],
+        "rough_defultlist":[0.2]
+    },
+    "BliskFilletFinishMilling": {
+        "cutterWidget": {
+            "Decimals":4,
+            "two_ranges": [[10, 5000], [10, 5000]],
+            "two_steps": [100, 100],
+            "two_defultlist": [1000, 1000],
+            "three_ranges": [[10, 5000], [10, 5000], [0, 10000]],
+            "three_steps": [100, 100, 100],
+            "three_defultlist": [1000, 1000, 1000],
+            "four_ranges": [[10, 5000], [10, 5000], [0, 10000], [0, 10000]],
+            "four_steps": [100, 100, 100, 100],
+            "four_defultlist": [1000, 1000, 1000, 1000]
+        },
+        "strategyWidget": {
+            "Decimals":4,
+            "extension_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "extension_steps": [1, 10],
+            "extension_defultlist": [0, 0],
+            "distance_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "distance_steps": [1, 10],
+            "distance_defultlist": [0, 0],
+            "tangential_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "tangential_steps": [1, 10],
+            "tangential_defultlist": [0, 0],
+            "radial_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "radial_steps": [1, 10],
+            "radial_defultlist": [0, 0]
+        },
+        "passesWidget":{
+            "Decimals":4,
+            "distance_ranges": [[0, "MAX_RANGE"], [0, "MAX_RANGE"]],
+            "distance_steps": [1, 10],
+            "distance_defultlist": [0.5, 10],
+            "max_step_ranges": [[0.1, "MAX_RANGE"], [1, "MAX_RANGE"]],
+            "max_step_steps": [0.1, 10],
+            "max_step_defultlist": [0.2, 10]
+        },
+        "axisAndAvoidanceWidget":{
+            "Decimals":4,
+            "tool_holder_ranges": [[0, 0],[0, 100], [0, 1000]],
+            "tool_holder_steps": [0, 1, 10],
+            "tool_holder_defultlist": [0, 0, 0],
+            "tool_neck_ranges": [[0, 100], [0, 1000]],
+            "tool_neck_steps": [1, 10],
+            "tool_neck_defultlist": [0, 0]
+        },
+        "nonCuttingMoveWidget":{
+            "Decimals":4,
+            "smoothing_length_ranges": [[0, 100], [0, 1000]],
+            "smoothing_length_steps": [1, 10],
+            "smoothing_length_defultlist": [5, 50],
+            "smoothing_height_ranges": [[0, 100], [0, 1000]],
+            "smoothing_height_steps": [1, 10],
+            "smoothing_height_defultlist": [1, 15],
+            "first_last_ranges": [[0, 100], [0, 1000]],
+            "first_last_steps": [1, 10],
+            "first_last_defultlist": [5, 50]
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-default",
+            "displayName": "'conan-default' config",
+            "description": "'conan-default' configure using 'Visual Studio 17 2022' generator",
+            "generator": "Visual Studio 17 2022",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW"
+            },
+            "toolset": {
+                "value": "v143",
+                "strategy": "external"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "toolchainFile": "..\\..\\conan_deps\\generators\\Release\\conan_toolchain.cmake",
+            "binaryDir": "C:\\Users\\jenkins\\workspace\\Power-platform_dev\\build\\Release"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-default",
+            "configuration": "Release",
+            "jobs": 2
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-default",
+            "configuration": "Release",
+            "environment": {
+                "PATH": "C:\\Users\\jenkins\\workspace\\Power-platform_dev\\conan_deps\\full_deploy\\host\\saribbonbar\\2.3.0\\Release\\x86_64\\bin;C:\\Users\\jenkins\\workspace\\Power-platform_dev\\conan_deps\\full_deploy\\host\\amcax-render\\1.4.0.637\\Release\\x86_64\\bin\\Release;C:\\Users\\jenkins\\workspace\\Power-platform_dev\\conan_deps\\full_deploy\\host\\onetbb\\2021.10.0\\Release\\x86_64\\bin;C:\\Users\\jenkins\\workspace\\Power-platform_dev\\conan_deps\\full_deploy\\host\\amcax-holefind\\0.0.2\\Release\\x86_64\\bin\\Release;C:\\Users\\jenkins\\workspace\\Power-platform_dev\\conan_deps\\full_deploy\\host\\amcax\\5.1.0.979\\Release\\x86_64\\bin;C:\\Users\\jenkins\\workspace\\Power-platform_dev\\conan_deps\\full_deploy\\host\\amcax\\5.1.0.979\\Release\\x86_64\\bin\\Release;$penv{PATH}"
+            }
+        }
+    ]
+}

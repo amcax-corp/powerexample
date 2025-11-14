@@ -1,0 +1,13 @@
+1759111382
+bin/Release/AMCAXholefind.dll: 53f62566a43b23d6180cddcb53de8e8c
+conaninfo.txt: 6946482dfc5061e17b305b4a5f40f61a
+include/Cutters.hpp: c3fc39cc1d1c593347df906cd79fc208
+include/Hole.hpp: ffc9ce941ffd6c8644a568ca47f9ddfc
+include/ThreadList.hpp: 1305f2d0a20dc24f9a4554abbee8d1a2
+include/UGHole.hpp: 7dca8014c616d8fe89928770aa4bf264
+include/buildAAG.hpp: de202b1ebfcf5062b756c4d86cb9fe51
+include/nlohmann/json.hpp: 247ea547c7b0aeca21a247edf6a47bbd
+lib/Release/AMCAXholefind.lib: 8fe446b8b01110a8f8a33be930234806
+lib/cmake/AMCAXholefind/AMCAXholefindConfig-release.cmake: b40e0f508b9276fb52d58d91b9e50d2e
+lib/cmake/AMCAXholefind/AMCAXholefindConfig.cmake: 39e69f152e7af0d2ff66045ad14d7dbf
+lib/cmake/AMCAXholefind/AMCAXholefindConfigVersion.cmake: 10ef4d4bcc66b4f196501a38533171b6

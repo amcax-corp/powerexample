@@ -1,0 +1,212 @@
+[
+    {
+        "key":"main_create_tool",
+        "type":"h_layout",
+        "title":"Create Tool",
+        "text":"Create a new tool object that appears in the geometry view of the tool Navigator",
+        "img":":icon/toolbar/create-tool.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":300
+    },
+    {
+        "key":"main_create_geometry",
+        "type":"h_layout",
+        "title":"Create Geometry",
+        "text":"Creates a new geometry group object that appears in the geometry view of the tool Navigator",
+        "img":":icon/toolbar/create-geometry.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":320
+    },
+    {
+        "key":"main_create_operation",
+        "type":"h_layout",
+        "title":"Create Operation",
+        "text":"Creates a operation that appears in all views of the process Navigator",
+        "img":":icon/toolbar/create-operation.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":280
+    },
+    {
+        "key":"main_create_program",
+        "type":"h_layout",
+        "title":"Create Program",
+        "text":"Creates a new program group that appears in all views of the process Navigator",
+        "img":":icon/toolbar/create-program.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":280
+    },
+    {
+        "key":"main_fast_create_op1",
+        "type":"h_layout",
+        "title":"Blisk Rough",
+        "text":"The milling process uses a cutting layer between the hub and the cladding to remove material between the blades and the diverter blades. <br> <br> Specifies the component geometry, blank geometry, hub, cladding, blade, blade root fillet, and shunt blade geometry. <br> Edit drive method to specify cutting mode. <br><br> is recommended for roughing between the blades of a disk with a rotating hub.",
+        "img":":icon/toolbar/blish-rough.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":300
+    },
+    {
+        "key":"main_fast_create_op2",
+        "type":"h_layout",
+        "title":"Blisk Hub Finish",
+        "text":"The milling process finishes the wheel hub. <br><br> Specifies the component geometry, blank geometry, hub, cladding, blade, blade root fillet, and shunt blade geometry. <br> Edit drive method to specify cutting mode. <br><br> Recommended for finishing wheels with blades with rotating hubs.",
+        "img":":icon/toolbar/hub-finish.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":300
+    },
+    {
+        "key":"main_fast_create_op3",
+        "type":"h_layout",
+        "title":"Blisk Blade Finish",
+        "text":"The milling process refines the blade in multiple cutting layers.<br> <br> Specifies component geometry, blank geometry, hub, cladding, blade, blade root fillet, and shunt blade geometry. <br> Edit the driver method to specify the cutting mode.<br><br>Recommended for finishing blades and shunt blades on turbomachinery components.",
+        "img":":icon/toolbar/blade-finish.png",
+        "width":50,
+        "tipwidth":200,
+        "textwidth":300
+    },
+    {
+        "key":"cad_trim_extend_curve",
+        "type":"h_layout",
+        "title":"Trim/Extend",
+        "text":"Trim or extend a curve by the particular method.",
+        "img":":icon/toolbar/extend-curve.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_curve_split",
+        "type":"h_layout",
+        "title":"Curve Split",
+        "text":"Split the curve by the other curve or the surface.",
+        "img":":icon/toolbar/split-curve.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_curve_merge",
+        "type":"h_layout",
+        "title":"Curve Merge",
+        "text":"Merge the curves.",
+        "img":":icon/toolbar/merge-curve.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":180
+    },
+    {
+        "key":"cad_project_curve",
+        "type":"h_layout",
+        "title":"Project Curve",
+        "text":"Project a curve on a surface by picking them.",
+        "img":":icon/toolbar/project-curve.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_create_intersection",
+        "type":"h_layout",
+        "title":"Create Intersection",
+        "text":"Create a intersrcting curve by picking two surfaces.",
+        "img":":icon/toolbar/intersect-surface.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_curve_direction_reverse",
+        "type":"h_layout",
+        "title":"Curve Direction",
+        "text":"Reverse the picked curve direction and display the direction with an arrow.",
+        "img":":icon/toolbar/reverse-curve.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_single_surface_refit",
+        "type":"h_layout",
+        "title":"Single Surface",
+        "text":"Reparamererize an arbitary surface conforming to the edges.",
+        "img":":icon/toolbar/rebuild-surface.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_multi_surface_refit",
+        "type":"h_layout",
+        "title":"Create Guiding",
+        "text":"Create curves on selected path faces using guiding curves.",
+        "img":":icon/toolbar/rebuild-multi-surface.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_extend_surface",
+        "type":"h_layout",
+        "title":"Extend Surface",
+        "text":"Extend a surface in U and V directions.",
+        "img":":icon/toolbar/extend-surface.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_surface_trim",
+        "type":"h_layout",
+        "title":"Surface Trim",
+        "text":"Trim a surface by picking it and then a curve to trim it.",
+        "img":":icon/toolbar/trim.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_create_rotated_surface",
+        "type":"h_layout",
+        "title":"Create Rotated",
+        "text":"Create a rotated surface by revolving and displacing a curve.",
+        "img":":icon/toolbar/revolve-surface.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_curves_loft",
+        "type":"h_layout",
+        "title":"Curves Loft",
+        "text":"Loft a group of curves.",
+        "img":":icon/toolbar/loft.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":180
+    },
+    {
+        "key":"cad_transform",
+        "type":"h_layout",
+        "title":"Transform",
+        "text":"Displace and revolve a curve or a surface.",
+        "img":":icon/toolbar/transform.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    },
+    {
+        "key":"cad_surface_deviation_analysis",
+        "type":"h_layout",
+        "title":"Surface Deviation",
+        "text":"Analyze the deviation of a surface by the reference surface.",
+        "img":":icon/toolbar/surface-deviation-analysis.png",
+        "width":50,
+        "tipwidth":220,
+        "textwidth":280
+    }
+]

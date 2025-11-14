@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BoxDialog</class>
+ <widget class="BlockDialog" name="BoxDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="DialogButtons" stdset="0">
+   <enum>BlockDialog::OK_Cancel</enum>
+  </property>
+  <property name="DialogTitle" stdset="0">
+   <string>立方体</string>
+  </property>
+  <widget class="QWidget" name="page">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>250</width>
+     <height>285</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockGroup" name="group">
+      <property name="LabelText" stdset="0">
+       <string>立方体数据</string>
+      </property>
+      <widget class="QWidget" name="groupContents">
+       <layout class="QVBoxLayout" name="contentLayout">
+        <item>
+         <widget class="BlockSpecifyPoint" name="blockspecifypoint">
+          <property name="StepStatus" stdset="0">
+           <enum>BlockAbstractGeometry::Optional</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockDouble" name="Length">
+          <property name="LabelText" stdset="0">
+           <string>长</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockDouble" name="Width">
+          <property name="LabelText" stdset="0">
+           <string>宽</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockDouble" name="Height">
+          <property name="LabelText" stdset="0">
+           <string>高</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockGroup</class>
+   <extends>BlockBase</extends>
+   <header>Widgets/ContainerBlock/BlockGroup.h</header>
+   <addpagemethod>AddContent</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockDouble</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockDouble.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSpecifyPoint</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSpecifyPoint.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

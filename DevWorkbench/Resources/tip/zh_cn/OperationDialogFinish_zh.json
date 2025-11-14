@@ -1,0 +1,32 @@
+[
+    {
+        "key":"feed_rates_control",
+        "type":"v_layout",
+        "title":"",
+        "text":"",
+        "img":":icon/tip/operation_table_finish.png",
+        "width":200,
+        "tipwidth":300,
+        "textwidth":300
+    },
+    {
+        "key":"drag_angle",
+        "type":"v_layout",
+        "title":"",
+        "text":"",
+        "img":":icon/tip/operation_table_finish.png",
+        "width":200,
+        "tipwidth":200,
+        "textwidth":300
+    },
+    {
+        "key":"tilt_angle",
+        "type":"v_layout",
+        "title":"",
+        "text":"",
+        "img":":icon/tip/operation_table_finish.png",
+        "width":200,
+        "tipwidth":200,
+        "textwidth":300
+    }
+]

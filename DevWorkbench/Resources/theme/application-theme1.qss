@@ -1,0 +1,522 @@
+
+/*** 主窗口 ***/
+
+/** 程序的背景色 */
+QWidget#mainContentWidget {
+  background-color: #F1F1F1;
+}
+
+/*** 通用 - tab （项目tab） ***/
+
+QTabWidget {
+  border: none;
+  padding: 0px;
+}
+
+QTabWidget::pane {
+  background-color:#FFFFFF;
+  border: none;
+}
+
+QTabBar::tab {
+  /* background-color: #F1F1F1; */
+  color: #000000;
+  padding: 8px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+QTabBar::tab:hover {
+  background-color: #E8E8F8;
+  color: #000000;
+}
+QTabBar::tab:selected {
+  background-color: #464681;
+  color: #FFFFFF;
+}
+QTabBar::close-button {
+  image: url(:icon/base/close-dark.png);
+}
+QTabBar::close-button:selected {
+  image: url(:icon/base/close-white.png);
+}
+
+/*** 通用 - Qtreeview (主要用于 导航器里 各个视图 ) ***/
+QTreeView::item{  
+  padding-top:5px;  padding-bottom:5px;
+  padding-right:2px;  padding-left: 2px;
+  margin-top:0px;
+}
+
+/*** 通用 - QMenu (主要用于 导航器里菜单 ) ***/
+QMenu {
+  background-color: #ffffff;
+  border:0.5px solid #f1f1f1;
+  border-radius: 4px;
+}
+
+QMenu::item {
+  padding: 5px 0px 5px 5px;
+  background-color: transparent;
+}
+
+QMenu::item:selected {
+  background-color: #E8E8F8;
+}
+
+QSlider::groove:horizontal {
+    border: none;
+    border-radius: 2px;
+    height: 4px;
+    margin: 0px 0;
+}
+QSlider::sub-page:horizontal {
+    background: #5D5DC2;
+    border: none;
+    border-radius: 2px;
+    height: 4px;
+    margin: 0px 0;
+}
+QSlider::add-page:horizontal {
+    background: #B7B8B9;
+    border: none;
+    border-radius: 2px;
+    height: 4px;
+    margin: 0px 0;
+}
+QSlider::handle:horizontal {
+  width: 12px;
+  border: none;
+  margin: -5px 0;  
+  image: url(:icon/toolbar/slider-icon.png);
+}
+
+/*** 一些基础组件 ***/
+
+PowerCAM--BlockTabWidget {
+  background-color: #FFFFFF;
+}
+
+
+/***      配置界面通用控件      ***/
+
+PowerCAM--BaseDialog QWidget{
+  background-color:#FFFFFF;
+}
+
+/*** QScrollArea 滚动条 ***/
+
+PowerCAM--BaseDialog QScrollArea {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+PowerCAM--BaseDialog QScrollBar:handle {
+    background-color: #B6B6B6;
+    border: none;
+    border-radius:3px;
+}
+
+PowerCAM--BaseDialog QScrollBar:vertical { width: 6px;}
+PowerCAM--BaseDialog QScrollBar:horizontal { height: 16px; }
+PowerCAM--BaseDialog QScrollBar:add-line:vertical, QScrollBar:add-line:horizontal,QScrollBar:sub-line:vertical, QScrollBar:sub-line:horizontal { border: none; }
+PowerCAM--BaseDialog QScrollBar:handle:vertical:hover, QScrollBar:handle:horizontal:hover { background-color: #7D7D7D; }
+PowerCAM--BaseDialog QScrollBar:handle:vertical:pressed, QScrollBar:handle:horizontal:pressed { background-color: #646464; }
+
+PowerCAM--OperationListWidget QScrollBar:vertical { width: 6px;}
+PowerCAM--OperationListWidget QScrollBar:horizontal { height: 16px; }
+PowerCAM--OperationListWidget QScrollBar:add-line:vertical, QScrollBar:add-line:horizontal,QScrollBar:sub-line:vertical, QScrollBar:sub-line:horizontal { border: none; }
+PowerCAM--OperationListWidget QScrollBar:handle:vertical, QScrollBar:handle:horizontal { background-color: #7D7D7D; }
+PowerCAM--OperationListWidget QScrollBar:handle:vertical:hover, QScrollBar:handle:horizontal:hover { background-color: #7D7D7D; }
+PowerCAM--OperationListWidget QScrollBar:handle:vertical:pressed, QScrollBar:handle:horizontal:pressed { background-color: #646464; }
+PowerCAM--OperationListWidget QListWidget {border: none;background-color: white;}
+PowerCAM--OperationListWidget QListWidget::item {font-size: 10pt; padding: 5px; }
+
+PowerCAM--OperationListWidget QScrollArea {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+PowerCAM--OperationListWidget QScrollBar:handle {
+    background-color: #B6B6B6;
+    border: none;
+    border-radius:3px;
+}
+
+/*** QStackedWidget ***/
+
+PowerCAM--BaseDialog QStackedWidget{
+  margin: 0px;
+  background-color:#FFFFFF;
+}
+
+/*** QListWidget列表 ***/
+
+PowerCAM--BaseDialog QListWidget {
+    background-color:#FFFFFF; 
+    border:none; 
+    margin:0px;
+    padding:0px 0px 0px 0px;
+    outline:none;
+}
+
+PowerCAM--BaseDialog QListWidget::item {
+    background-color:#FFFFFF; 
+    color:#000000; 
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    font-weight: 400;
+    padding:0px 4px 0px 4px;
+    margin:0px;
+}
+
+PowerCAM--BaseDialog QListWidget::item:selected{
+    background-color:#DBDBF8;
+    border-radius:4px;
+}
+
+/*** QLabel ***/
+
+PowerCAM--BaseDialog QLabel{
+  font-size: 12px;
+  height:20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/*** 按钮 ***/
+
+PowerCAM--BaseDialog QPushButton {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  outline:none;
+  icon-size: 20px 20px;
+  border: 1px solid #CDCDCD;
+  background-color: #FFFFFF;
+}
+
+PowerCAM--BaseDialog QPushButton:default {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  icon-size: 20px 20px;
+  border: 1px solid #CDCDCD;
+  background-color: #FFFFFF;
+}
+
+PowerCAM--BaseDialog QPushButton:flat {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  icon-size: 20px 20px;
+  border: 1px solid #CDCDCD;
+  background-color: #FFFFFF;
+}
+
+PowerCAM--BaseDialog QPushButton:hover {
+  background-color: #E8E8F8;
+}
+
+PowerCAM--BaseDialog QPushButton:focus {
+  background-color: #DBDBF8;
+}
+
+PowerCAM--BaseDialog QPushButton:!enabled {
+  background-color: #FFFFFF;
+}
+
+/*** int输入框 ***/
+
+PowerCAM--BaseDialog QSpinBox{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  padding: 0px 0px 0px 8px;
+  width: 100px;
+}
+
+PowerCAM--BaseDialog QSpinBox::up-button { 
+  width: 20px; height: 10px;
+  image: url(:icon/base/angle-up-small.png);
+}
+
+PowerCAM--BaseDialog QSpinBox::down-button { 
+  width: 20px; height: 10px;
+  image: url(:icon/base/angle-down-small.png);
+}
+
+PowerCAM--BaseDialog QSpinBox:focus{
+  border: 1px solid #4A4ABE;
+}
+
+PowerCAM--BaseDialog QSpinBox:hover{
+  border: 1px solid #BFBFBF;
+}
+
+PowerCAM--BaseDialog QSpinBox:!enabled{
+  border: 1px solid #EAEAEA;
+}
+
+/*** double输入框 ***/
+
+PowerCAM--BaseDialog QDoubleSpinBox{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  padding: 0px 0px 0px 8px;
+  width: 78px;
+}
+
+PowerCAM--BaseDialog QDoubleSpinBox:focus{
+  border: 1px solid #4A4ABE;
+}
+
+PowerCAM--BaseDialog QDoubleSpinBox:hover{
+  border: 1px solid #BFBFBF;
+}
+
+PowerCAM--BaseDialog QDoubleSpinBox:!enabled{
+  border: 1px solid #EAEAEA;
+}
+
+/*** 文字输入框 ***/
+
+PowerCAM--BaseDialog QLineEdit{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  padding: 0px 0px 0px 4px;
+}
+
+PowerCAM--BaseDialog QLineEdit:focus{
+  border: 1px solid #4A4ABE;
+}
+
+PowerCAM--BaseDialog QLineEdit:read-only{
+  border: 1px solid #CDCDCD;
+}
+
+PowerCAM--BaseDialog QLineEdit:hover{
+  border: 1px solid #BFBFBF;
+}
+
+PowerCAM--BaseDialog QLineEdit:!enabled{
+  border: 1px solid #EAEAEA;
+}
+
+/*** 下拉框 ***/
+
+PowerCAM--BaseDialog QComboBox{
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  padding: 0px 0px 0px 8px;
+}
+
+PowerCAM--BaseDialog QComboBox QAbstractItemView {
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  outline: none;
+}
+
+PowerCAM--BaseDialog QComboBox QAbstractItemView::item{
+  color:#000000;
+  background-color:#FFFFFF;
+  font-family: "Microsoft YaHei";
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 1px 4px 1px 4px;
+  height:20px;
+}
+
+PowerCAM--BaseDialog QComboBox QAbstractItemView::item:selected{
+  background-color:#E8E8F8;
+}
+
+PowerCAM--BaseDialog QComboBox::drop-down {
+  subcontrol-origin: padding;
+  subcontrol- position :  top  right ;
+  width : 20px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+PowerCAM--BaseDialog QComboBox::down-arrow {
+  image: url(:icon/base/arrow-down.png); 
+  width : 20px;
+  width : 20px;
+}
+
+PowerCAM--BaseDialog QComboBox:hover{
+  border: 1px solid #BFBFBF;
+}
+
+PowerCAM--BaseDialog QComboBox:!enabled{
+  border: 1px solid #EAEAEA;
+}
+
+/*** 勾选框 ***/
+
+PowerCAM--BaseDialog QCheckBox {
+  color: #000000;
+  font-size:12px;
+}
+
+PowerCAM--BaseDialog QCheckBox::indicator {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #636363;
+}
+
+PowerCAM--BaseDialog QCheckBox::indicator:checked {
+  background-color: #464681;
+  image: url(:icon/popup/checked.png);
+}
+
+PowerCAM--BaseDialog QCheckBox::indicator:checked:hover {
+  background-color: #59598E;
+}
+
+PowerCAM--BaseDialog QCheckBox::indicator:checked:!enabled {
+  background-color: #C4C4C4;
+}
+
+PowerCAM--BaseDialog QCheckBox::indicator:unchecked {
+  background-color: #F4F4F4;
+}
+
+PowerCAM--BaseDialog QCheckBox::indicator:unchecked:hover {
+  background-color: #ECECEC;
+}
+
+PowerCAM--BaseDialog QCheckBox::indicator:unchecked:!enabled {
+  background-color: #F4F4F4;
+}
+
+PowerCAM--BaseDialog QTreeView {
+  border: 0.5px solid #E5E5E5;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  alternate-background-color: #F6F6F6;
+}
+
+PowerCAM--BaseDialog QTreeView::item {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+PowerCAM--BaseDialog QTreeView::item {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+PowerCAM--BaseDialog QTreeView::item:first {
+  background-color: #F1F1F1;
+}
+
+PowerCAM--BaseDialog QHeaderView {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+PowerCAM--BaseDialog QHeaderView::section {
+  background-color: #F1F1F1;
+  border: 0.5px solid #E5E5E5;
+  margin: 0px;
+}
+
+/*** QTabWidget ***/
+
+PowerCAM--BaseDialog QTabBar::tab {
+  height: 20px; 
+  padding:2px 6px 2px 6px;
+}
+
+/*** xxxx4 ***/
+
+/*** xxxx5 ***/
+
+/*** 导航栏(工序导航器、项目列表等) ***/
+
+PowerCAM--MainNavigatorView QTabBar::tab {
+  color: #000000;
+}
+PowerCAM--MainNavigatorView QTabBar::tab:hover {
+  background-color: #D7D9D9;
+}
+PowerCAM--MainNavigatorView QTabBar::tab:selected {
+  background-color: #FFFFFF;
+}
+PowerCAM--MainNavigatorView QTabWidget {
+  qproperty-iconSize: 50px 38px;
+}
+
+PowerCAM--ProjectListView {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+/* 对应工序导航器 */
+QTabBar#OperationNavigatorTabBar{
+  qproperty-iconSize: 34px 34px;
+}
+QTabBar#OperationNavigatorTabBar::tab {
+  height: 32px; 
+  width: 32px; 
+  background-color: #FFFFFF;
+  /* border-radius: 10px; */
+}
+QTabBar#OperationNavigatorTabBar::tab::icon {
+  padding-left:6px;
+  padding-top:6px;
+}
+QTabBar#OperationNavigatorTabBar::tab:hover {
+  background-color: #E8E8F8;
+}
+QTabBar#OperationNavigatorTabBar::tab:selected {
+  background-color: #DBDBF8;
+}
+
+PowerCAM--OperationNavigatorWidget QTreeView{
+	qproperty-iconSize: 24px 24px;
+}
+PowerCAM--OperationNavigatorWidget QTreeView::item{
+	padding-left:6px;
+}
+
+QTreeView::branch:has-children:closed{
+	image: url(:icon/base/arrow-right.png); /** do this action */
+}
+QTreeView::branch:has-children:open{
+	image: url(:icon/base/arrow-down.png); /** do this action */
+}
+
+PowerCAM--PartNavigatorWidget QTreeView::item{
+  height:30px;
+}
+
+/*** 程序 - 状态栏 ***/
+
+QStatusBar {
+  background-color: #FFFFFF;
+}
+QStatusBar::item {
+  border: 0px
+}

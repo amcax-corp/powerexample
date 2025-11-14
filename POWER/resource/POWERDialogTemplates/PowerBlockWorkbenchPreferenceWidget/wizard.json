@@ -1,0 +1,183 @@
+{
+    "version": 1,
+    "supportedProjectTypes": [],
+    "id": "E.WorkbenchPreferenceWidget",
+    "category": "A.PowerWidgets",
+    "trDescription": {
+        "C": "Creates a 'Workbench Preference' Widget of PowerWidgets including a matching class (C++ header and source file) and a .ui file for the implemetation. You can add the form and class to an existing project.",
+        "en": "Creates a 'Workbench Preference' Widget of PowerWidgets including a matching class (C++ header and source file) and a .ui file for the implemetation. You can add the form and class to an existing project.",
+        "zh": "创建一个适配PowerWidgets的'首选项'页面，包括一个匹配的类（C++头文件和源文件）和界面文件以供实现。您可以将其添加到现有项目中。"
+    },
+    "trDisplayName": {
+        "C": "Workbench Preference Widget",
+        "en": "Workbench Preference Widget",
+        "zh": "工作台首选项页面"
+    },
+    "trDisplayCategory": "PowerWidgets",
+    "iconText": "wpw",
+    "enabled": "%{JS: value('Plugins').indexOf('CppEditor') >= 0}",
+    "usePragmaOnce": true,
+    "options": [
+        {
+            "key": "TargetPath",
+            "value": "%{Path}"
+        },
+        {
+            "key": "HdrPath",
+            "value": "%{Path}/%{HdrFileName}"
+        },
+        {
+            "key": "SrcPath",
+            "value": "%{Path}/%{SrcFileName}"
+        },
+        {
+            "key": "FormPath",
+            "value": "%{Path}/%{FormFileName}"
+        },
+        {
+            "key": "CN",
+            "value": "%{JS: Cpp.className(value('Class'))}"
+        },
+        {
+            "key": "GUARD",
+            "value": "%{JS: Cpp.headerGuard(value('HdrFileName'))}"
+        },
+        {
+            "key": "UiHdrFileName",
+            "value": "%{JS: 'ui_' + Util.completeBaseName(value('FormFileName')) + '.h'}"
+        },
+        {
+            "key": "BaseClass",
+            "value": "BlockWorkbenchPreferenceWidget"
+        }
+    ],
+    "pages": [
+        {
+            "trDisplayName": {
+                "C": "Class Information",
+                "en": "Class Information",
+                "zh": "类信息"
+            },
+            "trShortTitle": {
+                "C": "Details",
+                "en": "Details",
+                "zh": "详细信息"
+            },
+            "typeId": "Fields",
+            "data": [
+                {
+                    "name": "Sp0",
+                    "type": "Spacer"
+                },
+                {
+                    "name": "Class",
+                    "trDisplayName": "类名:",
+                    "mandatory": true,
+                    "type": "LineEdit",
+                    "data": {
+                        "trPlaceholder": {
+                            "C": "Fully qualified name, including namespaces",
+                            "en": "Fully qualified name, including namespaces",
+                            "zh": "完全限定名，包括命名空间"
+                        },
+                        "validator": "(?:(?:[a-zA-Z_][a-zA-Z_0-9]*::)*[a-zA-Z_][a-zA-Z_0-9]*|)",
+                        "text": "PreferenceWidget"
+                    }
+                },
+                {
+                    "name": "HdrFileName",
+                    "type": "LineEdit",
+                    "trDisplayName": "头文件:",
+                    "mandatory": true,
+                    "data": {
+                        "text": "%{JS: Cpp.classToFileName(value('Class'), Cpp.cxxHeaderSuffix())}"
+                    }
+                },
+                {
+                    "name": "SrcFileName",
+                    "type": "LineEdit",
+                    "trDisplayName": "源文件:",
+                    "mandatory": true,
+                    "data": {
+                        "text": "%{JS: Cpp.classToFileName(value('Class'), Cpp.cxxSourceSuffix())}"
+                    }
+                },
+                {
+                    "name": "FormFileName",
+                    "type": "LineEdit",
+                    "trDisplayName": "窗体文件:",
+                    "mandatory": true,
+                    "data": {
+                        "text": "%{JS: Cpp.classToFileName(value('Class'), 'ui')}"
+                    }
+                },
+                {
+                    "name": "Path",
+                    "type": "PathChooser",
+                    "trDisplayName": "路径:",
+                    "mandatory": true,
+                    "data": {
+                        "kind": "directory",
+                        "basePath": "%{InitialPath}",
+                        "path": "%{InitialPath}"
+                    }
+                }
+            ]
+        },
+        {
+            "trDisplayName": {
+                "C": "Project Management",
+                "en": "Project Management",
+                "zh": "项目管理"
+            },
+            "trShortTitle": {
+                "C": "Summary",
+                "en": "Summary",
+                "zh": "汇总"
+            },
+            "typeId": "Summary"
+        }
+    ],
+    "generators": [
+        {
+            "typeId": "File",
+            "data": [
+                {
+                    "source": "file.h",
+                    "target": "%{HdrPath}",
+                    "openInEditor": true,
+                    "options": [
+                        {
+                            "key": "Cpp:License:FileName",
+                            "value": "%{HdrFileName}"
+                        },
+                        {
+                            "key": "Cpp:License:ClassName",
+                            "value": "%{CN}"
+                        }
+                    ]
+                },
+                {
+                    "source": "file.cpp",
+                    "target": "%{SrcPath}",
+                    "openInEditor": true,
+                    "options": [
+                        {
+                            "key": "Cpp:License:FileName",
+                            "value": "%{SrcFileName}"
+                        },
+                        {
+                            "key": "Cpp:License:ClassName",
+                            "value": "%{CN}"
+                        }
+                    ]
+                },
+                {
+                    "source": "file.ui",
+                    "target": "%{FormPath}",
+                    "openInEditor": true
+                }
+            ]
+        }
+    ]
+}

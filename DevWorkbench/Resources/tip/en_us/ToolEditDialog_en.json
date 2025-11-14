@@ -1,0 +1,41 @@
+[
+    {
+        "block": "base",
+        "key": "name",
+        "type": "v_layout",
+        "title": "this is a title",
+        "text": "this is a text",
+        "img": ":icon/legend/blisk-blade-finish-operation.png",
+        "width": 200
+    },
+    {
+        "block": "ball_description",
+        "key": "description",
+        "type": "h_layout",
+        "title": "this is a title",
+        "text": "this is a text",
+        "img": ":icon/legend/blisk-blade-finish-operation.png",
+        "width": 200
+    },
+    {
+        "block": "base",
+        "key": "type",
+        "type": "combox",
+        "items": [
+            {
+                "type": "v_layout",
+                "title": "this is a title_1",
+                "text": "this is a text_1",
+                "img": ":icon/legend/blisk-blade-finish-operation.png",
+                "width": 200
+            },
+            {
+                "type": "v_layout",
+                "title": "this is a title_2",
+                "text": "this is a text_2",
+                "img": ":icon/legend/blisk-blade-finish-operation.png",
+                "width": 200
+            }
+        ]
+    }
+]

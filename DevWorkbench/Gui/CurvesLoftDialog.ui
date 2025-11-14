@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CurvesLoftDialog</class>
+ <widget class="BlockDialog" name="CurvesLoftDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="DialogButtons" stdset="0">
+   <enum>BlockDialog::OK_Cancel</enum>
+  </property>
+  <property name="DialogTitle" stdset="0">
+   <string>曲线放样</string>
+  </property>
+  <widget class="QWidget" name="page">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>250</width>
+     <height>285</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockGroup" name="cboundaryGroup">
+      <property name="LabelText" stdset="0">
+       <string>曲线放样</string>
+      </property>
+      <widget class="QWidget" name="groupContents">
+       <layout class="QVBoxLayout" name="contentLayout">
+        <item>
+         <widget class="BlockSelectObject" name="select1">
+          <property name="LabelText" stdset="0">
+           <string>拾取曲线1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockButton" name="CurvesReverse1">
+          <property name="LabelText" stdset="0">
+           <string>反向曲线1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSeparator" name="blockSeparator"/>
+        </item>
+        <item>
+         <widget class="BlockSelectObject" name="select2">
+          <property name="LabelText" stdset="0">
+           <string>拾取曲线2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockButton" name="CurvesReverse2">
+          <property name="LabelText" stdset="0">
+           <string>反向曲线2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockSeparator" name="blockSeparator_2"/>
+        </item>
+        <item>
+         <widget class="BlockToggle" name="Preview">
+          <property name="LabelText" stdset="0">
+           <string>预览</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockGroup</class>
+   <extends>BlockBase</extends>
+   <header>Widgets/ContainerBlock/BlockGroup.h</header>
+   <addpagemethod>AddContent</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSelectObject</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSelectObject.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockButton</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockSeparator</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockSeparator.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

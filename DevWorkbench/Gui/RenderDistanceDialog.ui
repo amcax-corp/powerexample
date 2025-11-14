@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RenderDistanceDialog</class>
+ <widget class="BlockDialog" name="RenderDistanceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="DialogButtons" stdset="0">
+   <enum>BlockDialog::OK_Cancel</enum>
+  </property>
+  <property name="DialogTitle" stdset="0">
+   <string>渲染距离</string>
+  </property>
+  <widget class="QWidget" name="page">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>250</width>
+     <height>296</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="BlockGroup" name="group">
+      <property name="LabelText" stdset="0">
+       <string>点1</string>
+      </property>
+      <widget class="QWidget" name="groupContents">
+       <layout class="QVBoxLayout" name="contentLayout">
+        <item>
+         <widget class="BlockDouble" name="point1x">
+          <property name="LabelText" stdset="0">
+           <string>x</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockDouble" name="point1y">
+          <property name="LabelText" stdset="0">
+           <string>y</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockDouble" name="point1z">
+          <property name="LabelText" stdset="0">
+           <string>z</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="group_2">
+      <property name="LabelText" stdset="0">
+       <string>点2</string>
+      </property>
+      <widget class="QWidget" name="groupContents_2">
+       <layout class="QVBoxLayout" name="contentLayout_2">
+        <item>
+         <widget class="BlockDouble" name="point2x">
+          <property name="LabelText" stdset="0">
+           <string>x</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockDouble" name="point2y">
+          <property name="LabelText" stdset="0">
+           <string>y</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="BlockDouble" name="point2z">
+          <property name="LabelText" stdset="0">
+           <string>z</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="BlockGroup" name="render">
+      <property name="LabelText" stdset="0">
+       <string>渲染</string>
+      </property>
+      <widget class="QWidget" name="groupContents_3">
+       <layout class="QVBoxLayout" name="contentLayout_3">
+        <item>
+         <widget class="BlockToggle" name="Preview">
+          <property name="LabelText" stdset="0">
+           <string>预览</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BlockGroup</class>
+   <extends>BlockBase</extends>
+   <header>Widgets/ContainerBlock/BlockGroup.h</header>
+   <addpagemethod>AddContent</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>BlockDialog</class>
+   <extends>QDialog</extends>
+   <header>Widgets/ContainerBlock/BlockDialog.h</header>
+   <addpagemethod>InitContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BlockToggle</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockToggle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BlockDouble</class>
+   <extends>QWidget</extends>
+   <header>Widgets/Block/BlockDouble.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,138 @@
+/// @file      Geom2Ellipse.hpp
+/// @brief     Class of 2D ellipse
+/// @copyright Copyright (c) 2023 Hefei Jiushao Intelligent Technology Co., Ltd. All rights reserved.
+/// @par       This file is part of AMCAX kernel.
+#pragma once
+#include <geometry/Geom2Conic.hpp>
+#include <math/EllipseT.hpp>
+
+namespace AMCAX
+{
+/// @brief Class of 2D ellipse
+class AMCAX_CLASS_API Geom2Ellipse : public Geom2Conic
+{
+public:
+	/// @brief Default constructor
+	constexpr Geom2Ellipse() noexcept = default;
+
+	/// @brief Construct from an ellipse
+	/// @param e The ellipse
+	AMCAX_API explicit Geom2Ellipse(const Ellipse2& e) noexcept;
+
+	/// @brief Construct from an axis, a major radius and a minor radius
+	/// @param majorAxis The axis
+	/// @param major The major radius
+	/// @param minor The minor radius
+	/// @param isRight Is the local frame right-handed
+	AMCAX_API Geom2Ellipse(const Axis2& majorAxis, double major, double minor, bool isRight);
+
+	/// @brief Construct from a local frame, a major radius and a minor radius
+	/// @param frame The local frame
+	/// @param major The major radius
+	/// @param minor The minor radius
+	AMCAX_API Geom2Ellipse(const Frame2& frame, double major, double minor);
+
+	/// @brief Set the ellipse
+	/// @param e The ellipse
+	AMCAX_API void SetEllipse(const Ellipse2& e) noexcept;
+
+	/// @brief Set the major radius
+	/// @param major The major radius
+	AMCAX_API void SetMajorRadius(double major);
+
+	/// @brief Set the minor radius
+	/// @param minor The minor radius
+	AMCAX_API void SetMinorRadius(double minor);
+
+	/// @brief Get the ellipse
+	/// @return The ellipse
+	[[nodiscard]] AMCAX_API Ellipse2 Ellipse() const noexcept;
+
+	[[nodiscard]] AMCAX_API double ReversedParameter(double u) const noexcept override;
+
+	/// @brief Get the directrix on the positive side of the major axis
+	/// @return The positive directrix
+	[[nodiscard]] AMCAX_API Axis2 Directrix1() const;
+
+	/// @brief Get the directrix on the negative side of the major axis
+	/// @return The negative directrix
+	[[nodiscard]] AMCAX_API Axis2 Directrix2() const;
+
+	/// @brief Get the eccentricity of the ellipse
+	/// @return The eccentricity
+	[[nodiscard]] AMCAX_API double Eccentricity() const override;
+
+	/// @brief Get the focal distance, i.e. the distance between two foci
+	/// @return The focal distance
+	[[nodiscard]] AMCAX_API double Focal() const noexcept;
+
+	/// @brief Get the focus on the positive side of the major axis
+	/// @return The positive focus
+	[[nodiscard]] AMCAX_API Point2 Focus1() const noexcept;
+
+	/// @brief Get the focus on the negative side of the major axis
+	/// @return The negative focus
+	[[nodiscard]] AMCAX_API Point2 Focus2() const noexcept;
+
+	/// @brief Get the major radius
+	/// @return The major radius
+	[[nodiscard]] AMCAX_API double MajorRadius() const noexcept;
+
+	/// @brief Get the minor radius
+	/// @return The minor radius
+	[[nodiscard]] AMCAX_API double MinorRadius() const noexcept;
+
+	/// @brief Get the focal parameter of the ellipse
+	/// @details The focal parameter of ellipse is the distance from a focus to the corresponding directrix.
+	///          Focal parameter = 2 * minor ^ 2 / focal = major * (1 - eccentricity ^ 2) / eccentricity
+	/// @return The focal parameter
+	[[nodiscard]] AMCAX_API double FocalParameter() const;
+
+	/// @brief Get the semilatus rectum of the ellipse
+	/// @details The semilatus rectum of ellipse is half of the length of the chord through a focus parallel to the directrix.
+	///          Semilatus rectum = minor ^ 2 / major = major * (1 - eccentricity ^ 2)
+	/// @return The semilatus rectum
+	[[nodiscard]] AMCAX_API double SemilatusRectum() const;
+
+	/// @brief Get the first parameter
+	/// @details For an ellipse, the first parameter is 0
+	/// @return The first parameter
+	[[nodiscard]] AMCAX_API double FirstParameter() const noexcept override;
+
+	/// @brief Get the last parameter
+	/// @details For an ellipse, the last parameter is 2pi
+	/// @return The last parameter
+	[[nodiscard]] AMCAX_API double LastParameter() const noexcept override;
+
+	/// @brief Is the ellipse closed
+	/// @return Always true
+	[[nodiscard]] AMCAX_API bool IsClosed() const noexcept override;
+
+	/// @brief Is the ellipse periodic
+	/// @return Always true
+	[[nodiscard]] AMCAX_API bool IsPeriodic() const noexcept override;
+
+	AMCAX_API void D0(double u, Point2& p) const noexcept override;
+	AMCAX_API void D1(double u, Point2& p, Vector2& v1) const noexcept override;
+	AMCAX_API void D2(double u, Point2& p, Vector2& v1, Vector2& v2) const noexcept override;
+	AMCAX_API void D3(double u, Point2& p, Vector2& v1, Vector2& v2, Vector2& v3) const noexcept override;
+	[[nodiscard]] AMCAX_API Vector2 DN(double u, int n) const override;
+	AMCAX_API void Transform(const Transformation2& tr) noexcept override;
+	[[nodiscard]] AMCAX_API std::shared_ptr<Geom2Geometry> Copy() const override;
+	AMCAX_API std::ostream& Write(std::ostream& os) const override;
+	AMCAX_API std::istream& Read(std::istream& is) override;
+
+	/// @brief Get the type of curve, an ellipse
+	/// @return Type ellipse
+	[[nodiscard]] AMCAX_API CurveType Type() const noexcept override;
+
+private:
+	void CheckValidity() const;
+
+	/// @brief Major radius of ellipse
+	double majorRadius = std::numeric_limits<double>::max();
+
+	/// @brief Minor radius of ellipse
+	double minorRadius = std::numeric_limits<double>::min();
+};
+} // namespace AMCAX
